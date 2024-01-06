@@ -18,21 +18,38 @@ pwsh=%SystemRoot%/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolic
 
 
 ;====================================
-;========= GIT ------- V1.1.1
+;========= GIT ------- V0.0.1
 ;====================================
+; CHECKOUT
+;=====================
 gch=git checkout  $*
 gchb=git checkout -b  $*
 gchd=git checkout develop $*
+gchm=git checkout master $*
+gchmn=git checkout main $*
+
+; STATUS
+;=====================
 gs=git status  $*
+
+; ADD
+;=====================
 gaa= git add -A  $* 
 gap= git add -p $*
+
+; BRANCH
+;=====================
 gb= git branch $*
 gbr= git branch -r $*
 
+; COMMIT
+;=====================
 gcm=git commit -m  $*
 gca=git commit --amend
 gcane=git commit --amend --no-edit
 
+; LOG
+;=====================
 gls=git log --oneline --all --graph --decorate  $*
 glo=git log --oneline $*
 glof=git log --oneline -n 5 $*
@@ -41,10 +58,14 @@ glon=git log --oneline -n $*
 glg=git log --graph $*
 glgo=git log --graph --oneline $*
 
+; PULL
+;=====================
 gpod=git pull origin develop
 gpodr=git pull origin develop --rebase
 gpro=git pull --rebase origin $*
 
+; RESET
+;=====================
 gr=git reset *$
 grh=git reset --hard *$
 
@@ -65,6 +86,8 @@ sol=symfony open:local $*
 ;=======================
 npmrd= npm run dev
 npmt= npm test
+npms= npm start
+
 ;=======================
 ; other commands
 ;=======================
