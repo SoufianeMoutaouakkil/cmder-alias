@@ -107,7 +107,6 @@ dkin= docker inspect $*
 dklg= docker logs $*
 dkst= docker stats $*
 
-
 ;=======================
 ; other commands
 ;=======================
