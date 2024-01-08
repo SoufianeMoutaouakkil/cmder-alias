@@ -110,6 +110,9 @@ dkst= docker stats $*
 ;=======================
 ; other commands
 ;=======================
+@REM set github="C:\Users\SMOUTAOUAKK\Documents\GitHub"
+@REM set dev="C:\Users\SMOUTAOUAKK\Documents\Dev"
+
 alsd=cd /d "%CMDER_ROOT%"/config
 
 shutup= cd %github%\shut-up
