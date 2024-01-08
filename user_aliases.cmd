@@ -88,16 +88,31 @@ npmrd= npm run dev
 npmt= npm test
 npms= npm start
 
+
+;====================================
+;========= DOCKER
+;====================================
+dk= docker *$
+
+dkctls= docker container ls $*
+dkimls= docker image ls $*
+
+dkim= docker image $*
+dkimrm= docker image rm $*
+dkct= docker container $*
+dkbd= docker build $*
+dkrn= docker run $*
+dkrm= docker rm $*
+dkin= docker inspect $*
+dklg= docker logs $*
+dkst= docker stats $*
+
+
 ;=======================
 ; other commands
 ;=======================
-noded=cd C:\Users\pc\Documents\Dev\node
-shutn=cd C:\Users\pc\Documents\Dev\node\chut-up-node
-reactd=cd C:\Users\pc\Documents\Dev\react
-shutr=cd C:\Users\pc\Documents\Dev\react\shut-up-react
-devd=cd C:\Users\pc\Documents\Dev
+alsd=cd /d "%CMDER_ROOT%"/config
 
-as= cd C:\cmder\config
-sas= cd C:\cmder\config && code .
-
-
+noded= cd %dev%\node
+shutrd= cd %dev%\node\shut-up-react
+shutnd= cd %dev%\node\shut-up-node
