@@ -115,7 +115,10 @@ dkst= docker stats $*
 
 alsd=cd /d "%CMDER_ROOT%"/config
 
-shutup= cd %github%\shut-up
+shutup  = cd %github%\shut-up
+shutupr = cd %github%\shut-up\shut-up-react
+shutupn = cd %github%\shut-up\shut-up-node
+
 noded= cd %dev%\node
 shutrd= cd %dev%\node\shut-up-react
 shutnd= cd %dev%\node\shut-up-node
