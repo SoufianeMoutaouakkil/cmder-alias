@@ -88,6 +88,10 @@ npmrd= npm run dev
 npmt= npm test
 npms= npm start
 
+;====================================
+;========= PHPUnit
+;====================================
+testsuite= vendor\bin\phpunit.bat --configuration unit_test\test\phpunit.xml --testsuite $1
 
 ;====================================
 ;========= DOCKER
@@ -112,6 +116,11 @@ dkst= docker stats $*
 ;=======================
 @REM set github="C:\Users\SMOUTAOUAKK\Documents\GitHub"
 @REM set dev="C:\Users\SMOUTAOUAKK\Documents\Dev"
+@REM set WWWD="C:\Users\alten113\Documents\wamp64\www"
+apmc= cd %WWWD%\APIMC
+ecco= cd %WWWD%\ECCO
+democode= cd %WWWD%\demo && code .
+demo= cd %WWWD%\demo
 
 alsd=cd /d "%CMDER_ROOT%"/config
 
