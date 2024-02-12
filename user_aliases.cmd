@@ -85,6 +85,7 @@ sol=symfony open:local $*
 ; NODE & NPM commands
 ;=======================
 npmrd= npm run dev
+npmrf= npm run format
 npmt= npm test
 npms= npm start
 
