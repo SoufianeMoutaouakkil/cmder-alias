@@ -112,11 +112,12 @@ dklg= docker logs $*
 dkst= docker stats $*
 
 ;=======================
-; other commands
+; Directories
 ;=======================
 @REM set github="C:\Users\SMOUTAOUAKK\Documents\GitHub"
 @REM set dev="C:\Users\SMOUTAOUAKK\Documents\Dev"
 @REM set WWWD="C:\Users\alten113\Documents\wamp64\www"
+
 apmc= cd %WWWD%\APIMC
 ecco= cd %WWWD%\ECCO
 democode= cd %WWWD%\demo && code .
@@ -124,10 +125,10 @@ demo= cd %WWWD%\demo
 
 alsd=cd /d "%CMDER_ROOT%"/config
 
+github = cd %github%
+
 shutup  = cd %github%\shut-up
 shutupr = cd %github%\shut-up\shut-up-react
 shutupn = cd %github%\shut-up\shut-up-node
 
-noded= cd %dev%\node
-shutrd= cd %dev%\node\shut-up-react
-shutnd= cd %dev%\node\shut-up-node
+freelance = cd %github%\freelance
